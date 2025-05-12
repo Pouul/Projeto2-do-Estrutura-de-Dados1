@@ -34,7 +34,7 @@ public class Node {
         isnot10 = true;
 
         //variavel auxiliar para juntar o cabeçario e o id
-        Saux = "23.S1-" + String.valueOf(id);
+        Saux = "25.S1-" + String.valueOf(id);
 
         // filtrando id
         if(id>0 && id<999){
@@ -64,6 +64,7 @@ public class Node {
             throw new Exception("dado forá do intervalo dado:" + inteiro + "." + decimal);
         }
 
+        this.prev = prev;
         this.next = next;
     }
 
@@ -72,7 +73,7 @@ public class Node {
     }
 
     public void setId(int id) throws Exception {
-        Saux = "23.S1-" + String.valueOf(id);
+        Saux = "25.S1-" + String.valueOf(id);
         if(id>0 && id<999){
             this.id = Saux;
         }

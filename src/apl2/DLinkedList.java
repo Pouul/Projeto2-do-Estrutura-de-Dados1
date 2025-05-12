@@ -15,14 +15,18 @@ package apl2;
 // comportamento descrito em cada operação.
 
 public class DLinkedList {
+	private Node<T> head; 
+	private Node<T> tail;
+ 	private int size;
 	
-	// TODO: Implementar a classe conforme o enunciado da atividade Apl2.
-
 
 // OPERAÇÃO:		Método construtor
 // COMPORTAMENTO:	Cria uma lista vazia.
 	public DLinkedList() {
-		// TODO: Implementar o método e remover o lançamento de exceção abaixo.
+		head = null ;
+		tail = null ;
+		size = 0;
+		
 		throw new UnsupportedOperationException("Método ainda não implementado.");
 	}
 
@@ -30,8 +34,8 @@ public class DLinkedList {
 // OPERAÇÃO:		insert(<dados da pessoa>)
 // COMPORTAMENTO:	Aloca um Node que contém os <dados da pessoa> e insere o
 //					novo nó no início da lista.
-	public void insert(/*dados da pessoa*/) {
-		// TODO: Implementar o método e remover o lançamento de exceção abaixo.
+	public void insert() {
+		
 		throw new UnsupportedOperationException("Método ainda não implementado.");
 	}
 
@@ -106,7 +110,7 @@ public class DLinkedList {
 // OPERAÇÃO:		count()
 // COMPORTAMENTO:	Retorna a quantidade de nós da lista.
 	public int count() {
-		// TODO: Implementar o método e remover o lançamento de exceção abaixo.
+		return size;
 		throw new UnsupportedOperationException("Método ainda não implementado.");
 	}
 
@@ -114,7 +118,7 @@ public class DLinkedList {
 // OPERAÇÃO:		isEmpty()
 // COMPORTAMENTO:	Retorna true se a lista estiver vazia ou false, caso contrário.
 	public boolean isEmpty() {
-		// TODO: Implementar o método e remover o lançamento de exceção abaixo.
+		return size == 0 ;
 		throw new UnsupportedOperationException("Método ainda não implementado.");
 	}
 
